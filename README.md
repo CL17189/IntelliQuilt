@@ -1,7 +1,8 @@
 # Graduation_Paper
-To show my latest updates of my graduation paper in RUC with tutor
+To show my latest updates of my graduation paper in RUC with professor
 
 ## Time Line 
++ 2024.4.10 Submitted the paper
 + 2024.2.21 Complete the training of multiple-modal data fusion model and submit the draft
 + 2024.1.14 Update the unimodal modeling code section and the data processing documents
 + 2024.1.8 Detailed data and pics
