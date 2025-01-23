@@ -1,4 +1,4 @@
-# Graduation_Paper
+# IntelliQuilt
 To show my latest updates of my graduation paper in RUC with professor
 
 ## Time Line 
