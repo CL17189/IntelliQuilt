@@ -1,6 +1,6 @@
 # IntelliQuilt
 To show my latest updates of my graduation paper in RUC with professor
-
+@ For copy rights reasons, i cannot upload all contents here.
 ## Time Line 
 + 2024.06 Accepted by the school and then nominated for an outstanding thesis.
 + 2024.04.10 Submitted the paper
