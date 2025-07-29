@@ -37,6 +37,61 @@ Next, we explored multimodal fusion. We experimented with various fusion stages 
 | 8  | Text, Image                  | Late         | Attention Mechanism     |      78.62% |
 | 9  | Structured, Image            | Late         | Attention Mechanism     |      79.88% |
 
+## Model Structure
+```mermaid
+flowchart TD
+    subgraph Input[Model Input]
+        A1[Main Product Image]
+        A2[Detail Image 1]
+        A3[Detail Image 2]
+        A4[Structured Data<br/>(e.g. Price=999, Origin=Ningbo)]
+        A5[Text Description<br/>e.g. "Winter Down Jacket 2023..."]
+    end
+
+    subgraph Models
+        B1[SqueezeNet<br/>(Main Image)]
+        B2[MobileNet_V2<br/>(Detail Image 1)]
+        B3[MobileNet_V2<br/>(Detail Image 2)]
+        B4[MLP<br/>(Structured Data)]
+        B5[LSTM<br/>(Text Data)]
+    end
+
+    subgraph Decision Vectors
+        C1[Decision 1]
+        C2[Decision 2]
+        C3[Decision 3]
+        C4[Decision 4]
+        C5[Decision 5]
+    end
+
+    D[Attention Mechanism]
+    E[Final Decision<br/>(Model Output)]
+
+    %% Connections from input to models
+    A1 --> B1
+    A2 --> B2
+    A3 --> B3
+    A4 --> B4
+    A5 --> B5
+
+    %% Model to decision vector
+    B1 --> C1
+    B2 --> C2
+    B3 --> C3
+    B4 --> C4
+    B5 --> C5
+
+    %% Decision vectors to attention
+    C1 --> D
+    C2 --> D
+    C3 --> D
+    C4 --> D
+    C5 --> D
+
+    %% Final output
+    D --> E
+```
+
 
 
 ## Time Line 
