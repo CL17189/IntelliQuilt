@@ -2,14 +2,9 @@
 **It is my undergraduate thesis project at Renmin University of China, which I completed with the help of my Tutor @JingZhou.**
 
 ## Project Introduction
-
-After rapid growth, China’s e‑commerce platforms have entered a phase of fierce competition in operational optimization and resource integration. Merchants must stand out on highly homogeneous platforms, and accurate sales forecasting enables better inventory allocation and marketing strategies—reducing costs and improving margins.
-
 In this study, we focus on down‑jacket products. We collected data for 4,608 items from a major e‑commerce marketplace, covering three modalities: text descriptions, structured attributes, and product images. After feature engineering and filling missing fields, we applied targeted data augmentation to address label imbalance, enhancing model generalization and preventing overfitting.
 
-For each modality, we built a baseline model using classic architectures and optimized for accuracy. To aid convergence and avoid overfitting, we employed early stopping, adaptive learning rates, and transfer learning. The image‑based SqueezeNet model achieved 72.58% accuracy; the text‑based LSTM reached 64.72%; and the structured‑data MLP reached 66.28%.
-
-Next, we explored multimodal fusion. We experimented with various fusion stages (early vs. late), modality combinations, and fusion rules—including feature concatenation, majority voting, and an attention mechanism. We also incorporated two specialized image models for detailed product shots. Our best late‑fusion model with attention, named **IntelliQuiltAI**, accepts images, text, and structured data and attained a maximum accuracy of **80.62%**. IntelliQuiltAI has been packaged as an interactive app for end users.
+For each modality, we built a baseline model using classic architectures and optimized for accuracy. The image‑based SqueezeNet model achieved 72.58% accuracy; the text‑based LSTM reached 64.72%; and the structured‑data MLP reached 66.28%. Next, we explored multimodal fusion. Our best late‑fusion model with attention, named **IntelliQuiltAI**, accepts images, text, and structured data and attained a maximum accuracy of **80.62%**. IntelliQuiltAI has been packaged as an interactive app for end users.
 
 ---
 
